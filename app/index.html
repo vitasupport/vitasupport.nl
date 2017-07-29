@@ -52,14 +52,14 @@
           <div class="row center">
 
             <!-- Modal Trigger -->
-            <button data-target="modal1" class="btn btn-large waves-effect waves-light blue-grey darken-3 modal-trigger">Get Started!</button>
+            <button data-target="modal1" class="btn btn-large waves-effect waves-light blue-grey darken-3 modal-trigger" onclick="$('#gform')[0].reset();">Get Started!</button>
 
           </div>
           <br><br>
 
         </div>
       </div>
-      <div class="parallax"><img src="background5.jpg" alt="Unsplashed background img 1"></div>
+      <div class="parallax"><img src="images/background5.jpg" alt="Unsplashed background img 1"></div>
     </div>
 
     <!-- Modal Structure -->
@@ -68,48 +68,53 @@
         <div class="row">
           <form class="col s12 blue-grey-text text-darken-3" id="gform" method="post" action="https://script.google.com/macros/s/AKfycbyq3q5Ui7OY1KWdGCOX0JSHvJWP9iysa6ghtb_anA-etdTQzoA/exec">
             <div class="row">
-              <div class="input-field col m6 s12">
+              <div class="input-field col m4 s12">
                 <input id="first_name" name="first_name" type="text" class="validate">
                 <label for="first_name">Voornaam</label>
               </div>
-              <div class="input-field col m6 s12">
+              <div class="input-field col m4 s12">
                 <input id="last_name" name="last_name" type="text" class="validate">
                 <label for="last_name">Achternaam</label>
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s12">
+              <div class="input-field col m4 s12">
                 <input id="email" name="email" type="email" class="validate">
                 <label for="email">Email</label>
                 <span id="email-invalid" style="display:none">Geen valide email!</span>
               </div>
+              <div class="input-field col m2 s6">
+               <select id="gender" name="gender">
+                 <option value="" disabled selected>Geslacht</option>
+                 <option value="M">Man</option>
+                 <option value="V">Vrouw</option>
+               </select>
+             </div>
+             <div class="input-field col m2 s6">
+               <input id="age" name="age" type="text" class="validate">
+               <label for="age">Leeftijd</label>
+             </div>
             </div>
             <div class="row">
-             <div class="input-field col s12">
+             <div class="input-field col m8 s12">
                <textarea id="message" name="message" class="materialize-textarea"></textarea>
                <label for="message">Doelstelling</label>
              </div>
            </div>
-           <div class="row">
-             <div class="input-field col m2 s6">
-              <select id="gender" name="gender">
-                <option value="" disabled selected>Geslacht</option>
-                <option value="M">Man</option>
-                <option value="V">Vrouw</option>
-              </select>
-            </div>
-            <div class="input-field col m2 s6">
-              <input id="age" name="age" type="text" class="validate">
-              <label for="age">Leeftijd</label>
-            </div>
-          </div>
           <div class="row">
-            <button class="btn waves-effect waves-light blue-grey darken-3">Verstuur!</button>
+            <div class="col m2 s12">
+              <button class="btn waves-effect waves-light blue-grey darken-3">Verstuur!</button>
+            </div>
+            &nbsp;
+            <div class="col offset-m4 m2 s12">
+              <button type="reset" class="btn waves-effect waves-light blue-grey darken-3">Reset!</button>
+            </div>
           </div>
         </form>
           <!-- Customise the Thankyou Message People See when they submit the form: -->
           <div style="display:none;" id="thankyou_message">
-            <h5><em>Bedankt</em> voor je bericht!</h5>
+            <h5><em>Super!</em> Je hebt je eerste stap gezet!</h5>
+            <p>Nu de vervolg stappen...Ik neem zo spoedig mogelijk contact met je op!</p>
             <div class="modal-footer">
               <a href="#!" class="modal-action modal-close btn-flat">Sluit</a>
             </div>
@@ -203,7 +208,7 @@
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 2"></div>
+      <div class="parallax"><img src="images/background4.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
     <div class="container">
@@ -255,7 +260,7 @@
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="background6.jpg" alt="Unsplashed background img 3"></div>
+      <div class="parallax"><img src="images/background6.jpg" alt="Unsplashed background img 3"></div>
     </div>
 
     <div class="container">
@@ -309,7 +314,7 @@
           </div>
         </div>
       </div>
-      <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 2"></div>
+      <div class="parallax"><img src="images/background4.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
     <div class="container">
