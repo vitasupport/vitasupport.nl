@@ -59,3 +59,7 @@ footer.page-footer {
 .parallax-container.pad-top, .container.pad-top {
   padding-top: 56px
 }
+
+.row.pad-top {
+  padding-top: 40px;
+}
