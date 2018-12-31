@@ -22,8 +22,7 @@
 
   <!-- CSS  -->
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <header>
@@ -173,7 +172,7 @@
               <div class="card-content white-text">
                 <span class="card-title">“Get fit stay fit" (12 sessies)</span>
                 <p>1x per week</p>
-                <p>€180,00 per maand</p>
+                <p>€200,00 per maand</p>
               </div>
               <div class="card-action">
                 <a href="https://www.personaltrainerapp.nl/p/3446" target="_blank">Aanmelden!</a>
@@ -185,7 +184,7 @@
               <div class="card-content white-text">
                 <span class="card-title">“Achieving succes" (24 sessies)</span>
                 <p>2x per week</p>
-                <p>€360,00 per maand</p>
+                <p>€400,00 per maand</p>
               </div>
               <div class="card-action">
                 <a href="https://www.personaltrainerapp.nl/p/4837" target="_blank">Aanmelden!</a>
@@ -197,7 +196,7 @@
               <div class="card-content white-text">
                 <span class="card-title">“Total transformer" (36 sessies)</span>
                 <p>3x per week</p>
-                <p>€540,00 per maand</p>
+                <p>€600,00 per maand</p>
               </div>
               <div class="card-action">
                 <a href="https://www.personaltrainerapp.nl/p/7604" target="_blank">Aanmelden!</a>
@@ -371,7 +370,8 @@
   <!--  Scripts-->
   <noscript id="deferred-styles">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </noscript>
   <script>
       var loadDeferredStyles = function() {
@@ -389,7 +389,22 @@
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
   <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
   </body>
